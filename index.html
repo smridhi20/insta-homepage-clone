@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="example">
+            <div class="post-head">
+                <div class="post-story">
+                    <div class="story"><img src="./Images/Screenshot 2023-08-06 190740.png" alt=""></div>
+                </div>
+                <div style="margin-top: 5%; color: white;" >
+                    <span>Roronoa Zoro</span><i class="fa-solid fa-certificate" style="color: lightblue;"></i>
+                </div>
+                <div style="margin-top: 6%;color: white;"> <button style="background-color: black; color: white" class="post-delete">delete</button>
+                    <!-- <button style="background-color: black; color: white" class="edit">Edit</button>--></div> 
+            </div>
+            <div class="post-img">
+                <img src="./Images/Screenshot 2023-08-05 031313.png" alt="">
+            </div>
+            <div class="post-icons">
+                <div> 
+                    <button><i class="fa-solid fa-heart" id="likes"></i></button>
+                    <button><i class="fa-regular fa-comment"></i></button>
+                    <button><i class="fa-regular fa-paper-plane"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+            </div>
+            <div class ="caption-text" style="color: white; margin-left: 15px; ">
+                <span>20</span>Likes
+            </div>
+            <div class="captions" style="color: white; margin-bottom: 5px;">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+            <div class="comment-section">
+                <input class="comment-input" type="text" placeholder="add comment">
+                    <span> <button class="comment-button" style="margin-left: 23%;"> post </button></span>
+                    <ul class="comments" style="color: white;">
+                    </ul>
+            </div>
+        </div>
+        <div class = "nav">
+            <div class="logo">
+                <a href="">Instagram</i></a>
+            </div>
+            <div class="icon">
+                <ul type="none">
+                    <li><div ><a href=""><i class="fa-solid fa-house" ></i><span style="margin-left: 5px;">Home</span></a>
+                        </div></li>
+                    <li><div>
+                        <a href=""><i class="fa-brands fa-facebook-messenger" ></i><span style="margin-left: 5px;">Messages</span></a>
+                    </div></li>
+                    <li><div>
+                        <a href=""><i class="fa-regular fa-compass" ></i><span style="margin-left: 5px;">Explore</span></a>
+                    </div></li>
+                    <li><div>
+                        <a href=""><i class="fa-solid fa-magnifying-glass" ></i><span style="margin-left: 5px;">Search</span></a>
+                    </div></li>
+                    <li><div>
+                        <a href=""><i class="fa-solid fa-heart" ></i><span style="margin-left: 5px;">Notification</span></a>
+                    </div></li>
+                    <li><div id="create">
+                        <a href="" ><i class="fa-solid fa-plus"></i><span style="margin-left: 5px;">Create</span></a>
+                    </div></li>
+                    <li><div>
+                        <a href="">
+                            <img src="./Images/Screenshot 2023-08-06 190740.png" alt="">
+                            <span style="margin-left: 5px;font-family: 'Courier New', Courier, monospace; font-size: 15px; margin-bottom: 20px;">Ronona Zoro</span>
+                        </a>
+                    </div></li>
+                </ul>
+                <div style="margin-top: 10px; margin-left: 20px; width: 150px; ">
+                    <a href="" style="text-decoration: none;"><i class="fa-solid fa-bars" style="color: white;"></i><span style="margin-left: 5px;color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">More</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="stories">
+                <div class="horizontal-scroll">
+                    <button class="btn-scroll" id="btn-scroll-left"><i class="fa-solid fa-arrow-left" onclick="scrollHorizontally(1)"></i></button>
+                    <button class="btn-scroll" id="btn-scroll-right"><i class="fa-solid fa-arrow-right" onclick="scrollHorizontally(-1)"></i></button>
+                    <div class="story-container">
+                        <div class="story"><img src="./Images/Screenshot 2023-08-06 190740.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-05-22 111709.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-05-23 131431.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-05-25 155519.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-05-30 201516.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-05-30 203908.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-06-01 014812.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-08-05 031313.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-08-05 031826.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-08-05 032035.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-08-05 170316.png" alt=""></div>
+                        <div class="story"><img src="./Images/Screenshot 2023-08-06 035905.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="Profile">
+                <div class="profile-icon"><img src="./Images/Screenshot 2023-08-06 190740.png" alt=""></div>
+                <div class="profile-name"><a href=""><span><strong>Ronona Zoro</strong></a></span><br>
+                    <p>Ronona Zoro</p>
+                </div>
+                <div style="margin-left:5vw; "><a href="" style="color: rgb(0,72,119);">Switch</a></div>
+            </div>
+            <div class="Suggest">
+                <div style="margin-left: 2.5vw;">Suggetions For You</div>
+                <div style="margin-right: 3vw;">See All</p></div>
+            </div>
+            <div class="Suggetions">
+                <div class="profiles">
+                    <div class="profile-icon2"><img src="./Images/Screenshot 2023-08-06 035905.png" alt=""></div>
+                  <div class="profile-name2"><a href=""><span><strong>Miles Morales</strong></a></span><br>
+                    <p style="font-size: 10px;">followed by peterparker</p>
+                </div>
+                <div style="margin-left:6.5vw; margin-top: 2.5%;" ><a href="" style="color: rgb(0,72,119); text-decoration: none;">Follow</a></div>
+                </div>
+                <div class="profiles">
+                    <div class="profile-icon2"><img src="./Images/Screenshot 2023-05-25 155519.png" alt=""></div>
+                  <div class="profile-name2"><a href=""><span><strong>Death_Wolf</strong></a></span><br>
+                    <p>Death_Wolf</p>
+                </div>
+                <div style="margin-left:6.5vw; margin-top: 2.5%;" ><a href="" style="color: rgb(0,72,119); text-decoration: none;">Follow</a></div>
+                </div>
+                <div class="profiles">
+                    <div class="profile-icon2"><img src="./Images/Screenshot 2023-08-05 031313.png" alt=""></div>
+                  <div class="profile-name2"><a href=""><span><strong>Gojo Satoru</strong></a></span><br>
+                    <p>Gojo Satoru</p>
+                </div>
+                <div style="margin-left:6.5vw; margin-top: 2.5%;" ><a href="" style="color: rgb(0,72,119); text-decoration: none;">Follow</a></div>
+                </div>
+                <div class="profiles">
+                    <div class="profile-icon2"><img src="./Images/Screenshot 2023-08-05 170316.png" alt=""></div>
+                  <div class="profile-name2"><a href=""><span><strong>Suguru</strong></a></span><br>
+                    <p>Suguru</p>
+                </div>
+                <div style="margin-left:6.5vw; margin-top: 2.5%;" ><a href="" style="color: rgb(0,72,119); text-decoration: none;">Follow</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="bgModal">
+            <div class="modal-content">
+                <h2 style="height: 50px;padding: 20px; color: white;">Create Post</h2>
+                <br>
+                <hr>
+                <br>
+                <span>Author Name</span><br>
+                <form action="">
+                <input type="text" name="" id="Authname"><br>
+                <span>Author Profile Photo</span><br>
+                <input type="text" name="" id="Authpicture"><br>
+                <span>Post Caption</span><br>
+                <input type="text" name="" id="post-caption"><br>
+                <span>Post Photo</span><br>
+                <input type="text" name="" id="post-picture"><br>
+                <span>Post Date</span><br>
+                <input type="date" name="" id="date">
+            </form>
+                <br>
+                <button type="submit" id="make-post">Create Post</button> <br>
+                <button id="close-form">Cancel</button>
+            </div>
+        </div>
+        <div class="EditbgModal">
+            <div class="modal-content">
+                <h2 style="height: 50px;padding: 20px; color: white;">EditPost</h2>
+                <br>
+                <hr>
+                <br>
+                <span>Author Name</span><br>
+                <form action="">
+                <input type="text" name="" id="EditAuthname"><br>
+                <span>Author Profile Photo</span><br>
+                <input type="text" name="" id="EditAuthpicture"><br>
+                <span>Post Caption</span><br>
+                <input type="text" name="" id="Editpost-caption"><br>
+                <span>Post Photo</span><br>
+                <input type="text" name="" id="Editpost-picture"><br>
+                <span>Post Date</span><br>
+                <input type="date" name="" id="Editdate">
+            </form>
+                <br>
+                <button type="submit" id="Edit-post">EditPost</button> <br>
+                <button id="Editclose-form">Cancel</button>
+            </div>
+        </div>
+        
+        <script src="./main.js"></script>
+</body>
+</html>

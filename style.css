@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+   
+}
+.container .active{
+    filter: blur(20px);
+}
+.post-card{
+    display: none;
+} 
+.nav{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right:1px solid white ;
+    align-items:flex-start ;
+    position: fixed;
+    background-color: black;
+}
+.nav{
+    font-size: 15px;
+    font-family: 'Grand Hotel', cursive;
+    color: white;
+}
+.logo{
+    font-size: 30px;
+    margin-left: 35px;
+    margin-bottom:20px;
+}
+.nav .logo a{
+    text-decoration: none;
+    color: white;
+    /* font-family: 'Grand Hotel', cursive; */
+}
+.nav .icon li {
+    /* position: relative; */
+    font-size: 18px;
+    
+    padding: 15px;
+
+}
+.nav .icon li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+i{
+    color: white;
+}
+.nav .icon li img{
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.nav .icon div { 
+    font-family: 'Grand Hotel', cursive;
+    padding: 10px;
+}
+.nav .icon div:hover{
+    background-color: grey;
+    border-radius: 15px;
+}
+.main{
+    width: 55%;
+    height: 100%; 
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;   
+    background-color: black;
+    /* position: absolute; */
+    margin-left: 20vw;
+}
+
+.stories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.horizontal-scroll{
+    width: 800px;
+    height: 80px;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.horizontal-scroll .btn-scroll{
+    color: #999;
+    background-color: black;
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 50%;
+    margin: 0 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+.story-container{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    transition: 0.3s all ease-out;
+}
+.story{
+    background: linear-gradient(rgb(231,0,231),rgb(255,115,0));
+    width: 65px;
+    height: 65px;
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* transform: rotateZ(45deg); */
+}
+.story img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* transform: rotateZ(-45deg); */
+}
+.sidebar{
+    width: 25vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-left: 75vw; */
+}
+.Profile{
+    width: 20vw;
+    height: 100px;
+    display: flex;
+    background-color: black;
+    margin-top: 10%;
+    margin-left: 25px;
+    align-items: center;
+}
+.profile-icon img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.profile-name{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+}
+.profile-name a {
+    color: white;
+}
+.Profile a{
+    text-decoration: none;
+}
+.Suggest{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.Suggest div{
+    color: white;
+    margin-left: 5px;
+}
+.Suggetions {
+    display: flex;
+    flex-direction: column;
+}
+.profiles{
+    display: flex;
+    margin-top: 3%;
+}
+.profile-icon2 img{
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    margin-left: 2.5vw;
+    margin-top: 10px;
+}
+.profile-name2{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+}
+.profile-name2 a {
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.bgModal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    display: none;
+    /* z-index: 3; */
+    position: fixed;
+    
+}
+.active{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    /* display: none; */
+    /* z-index: 3; */
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.EditbgModal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    display: none;
+    /* z-index: 3; */
+    position: fixed;
+    
+}
+.active{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    /* display: none; */
+    /* z-index: 3; */
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+/* .modal-content{
+    min-width: 500px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 8px;
+} */
+.modal-content {
+    width: 400px;
+    min-height: 465px;
+    background-color: rgb(31, 28, 28);
+    border-radius: 8px;
+  }
+  .modal-content span{
+    color: white;
+    padding-left: 10px;
+  
+  }
+  .modal-content form input{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 380px;
+  }
+  .modal-content button{
+    margin-left: 10px;
+    border-radius: 6px;
+    padding: 3px;
+    width: 380px;
+  }
+.example{
+    display: none;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    border-top: 1px solid #999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: white; */
+}
+.post-story{
+    background: linear-gradient(rgb(231,0,231),rgb(255,115,0));
+    width: 65px;
+    height: 65px;
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: rotateZ(0deg);
+}
+.post-head{
+    display: flex;
+    justify-content: flex-start;
+    /* margin-right: 2em; */
+    padding: 0;
+}
+.post-img img{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid gray; */
+    border-radius: 2%;
+}
+.post-head button{
+    border: none;
+    margin-left: 37vw;
+    cursor: pointer;
+}
+.post-icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.post-icons button{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-top: 2%;
+}
+.captions span{
+    margin-left: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.caption-text span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.comment-section{
+    margin-left: 5%;
+    margin-bottom: 1%;
+    
+}
+.comment-input{
+    width: 70%;
+    background-color: black;
+    opacity: 0.5;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin-top: 2%;
+    
+}
+.comment-button{
+    border: none;
+    color: white;
+    background-color: black;
+}
+.comments{
+    list-style-type: none;
+    color: white;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.del-button{
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    opacity: 0.4;
+    border: none;
+}
+.profile-name2 p{
+    display: inline;
+    opacity: 0.5;
+    font-size:10px;
+}
